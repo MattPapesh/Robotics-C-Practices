@@ -8,7 +8,7 @@
     {
         system ("cls");
 
-        printf ("Enter amount of slots for the array: ");
+        printf ("Enter amount of slots for the array (array size): ");
 
         std::cin >> arraySize; 
 
@@ -62,7 +62,9 @@ int main()
         }
     }
 
-    printf ("\n The absolute sum is: %i", absoluteSum); // the absolute sum is diplayed. 
-   
+    printf ("\n The absolute sum is: %i \n", absoluteSum); // the absolute sum is diplayed. 
+
+   while (kbhit() != 1); // Closes program once a key is pressed. 
+
     return 0; 
 }
